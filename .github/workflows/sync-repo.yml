@@ -74,8 +74,10 @@ jobs:
             exit 0
           fi
 
+          sync_time=$(TZ="America/New_York" date +"%Y-%m-%d %H:%M %Z")
+
           git add -A
-          git commit -m "Sync from ${OLD_REPO}"
+          git commit -m "Sync from ${OLD_REPO} at ${sync_time}"
 
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${NEW_REPO}.git"
           git push origin "$BRANCH"
