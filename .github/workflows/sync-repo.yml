@@ -60,6 +60,7 @@ jobs:
           rsync -a --delete \
             --exclude='.git/' \
             --exclude='.github/workflows/sync-repo.yml' \
+            --exclude='index.html' \
             source/ destination/
 
           cd destination
