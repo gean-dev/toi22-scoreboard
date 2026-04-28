@@ -442,7 +442,7 @@ var DataStore = new function () {
         } else if (state == 1) {
             $("#ConnectionStatus_box").attr("data-status", "connected");
             $("#ConnectionStatus_text").html("The archived data are successfully loaded");
-            $("#ConnectionStatus_label").html("Updated: 11:00");
+            $("#ConnectionStatus_label").html("Updated: 11:05");
         } else if (state == 2) {
             $("#ConnectionStatus_box").attr("data-status", "init_error");
             $("#ConnectionStatus_text").html("An error occurred while loading the data. Check your connection and <a onclick=\"window.location.reload();\">reload the page</a>.");
