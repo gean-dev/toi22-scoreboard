@@ -47,7 +47,7 @@ var Config = new function () {
     };
 
     self.get_score_url = function () {
-        return "scores?v=1777347902";
+        return "scores?v=1777348502";
     };
 
     self.get_history_url = function () {
